@@ -1,0 +1,13 @@
+{
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": {
+        "module": "ESNext",
+        "rootDir": "./src",
+        "outDir": "./build/esm"
+    },
+    "files": [
+        "./src/index.ts",
+        "./src/FastQuene.ts",
+        "./src/MixAsyncGenerator.ts",
+    ]
+}

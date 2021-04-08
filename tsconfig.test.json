@@ -1,0 +1,17 @@
+{
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": {
+        "module": "CommonJS",
+        "rootDir": "./test",
+        "outDir": "./build/test"
+    },
+    "files": [
+        "./test/FastQueue.test.ts",
+        "./test/MixAsyncGenerator.test.ts",
+    ],
+    "references": [
+        {
+            "path": "./tsconfig.cjs.json"
+        }
+    ]
+}

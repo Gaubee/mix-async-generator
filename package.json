@@ -1,0 +1,25 @@
+{
+  "name": "mix-async-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/src/index.js",
+  "module": "build/esm/index.js",
+  "scripts": {
+    "dev": "tsc -w --build ./tsconfig.dev.json",
+    "build": "tsc --build ./tsconfig.json",
+    "test": "ava build/test/*.js"
+  },
+  "files": ["build"],
+  "keywords": [
+    "AsyncGenerator"
+  ],
+  "author": "Gaubee",
+  "license": "ISC",
+  "dependencies": {
+    "@bfchain/util-extends-promise": "^0.0.1-alpha.4",
+    "evt": "^1.9.12"
+  },
+  "devDependencies": {
+    "ava": "^3.15.0"
+  }
+}
