@@ -1,11 +1,11 @@
 {
   "name": "mix-async-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "build/src/index.js",
   "module": "build/esm/index.js",
   "scripts": {
-    "dev": "tsc -w --build ./tsconfig.dev.json",
+    "dev": "tsc --build ./tsconfig.dev.json -w",
     "build": "tsc --build ./tsconfig.json",
     "test:cov": "nyc --reporter=lcov --reporter=text-summary ava build/test/*.js",
     "test": "ava build/test/*.js"
