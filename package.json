@@ -7,9 +7,12 @@
   "scripts": {
     "dev": "tsc -w --build ./tsconfig.dev.json",
     "build": "tsc --build ./tsconfig.json",
+    "test:cov": "nyc --reporter=lcov --reporter=text-summary ava build/test/*.js",
     "test": "ava build/test/*.js"
   },
-  "files": ["build"],
+  "files": [
+    "build"
+  ],
   "keywords": [
     "AsyncGenerator"
   ],
@@ -20,6 +23,7 @@
     "evt": "^1.9.12"
   },
   "devDependencies": {
-    "ava": "^3.15.0"
+    "ava": "^3.15.0",
+    "nyc": "^15.1.0"
   }
 }
